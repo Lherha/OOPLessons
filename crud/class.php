@@ -1,6 +1,11 @@
 <?php
 class Person
 {
+    /** 
+  * A public variable 
+  * 
+  * @var string stores data for the class 
+  */
   public $name;
   public $age;
 
