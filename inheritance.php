@@ -24,8 +24,8 @@ class Person
     /**
      * Constructor to initialize properties.
      *
-     * @param string $name The name of the person.
-     * @param int $age The age of the person.
+     * @param string $name
+     * @param int $age
      */
     public function __construct($name, $age)
     {
