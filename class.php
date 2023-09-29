@@ -13,7 +13,7 @@ class Person
 {
     /**
      * helps to set name
-     * @var string 
+     * @var string
      */
     public $name = 'Bolaji';
 
@@ -26,7 +26,7 @@ class Person
     /**
      * Get the name of the person.
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -36,7 +36,7 @@ class Person
     /**
      * Get the age of the person.
      *
-     * @return int The age of the person.
+     * @return int
      */
     public function getAge()
     {
@@ -46,7 +46,7 @@ class Person
     /**
      * Set the age of the person.
      *
-     * @param int $newAge The new age of the person.
+     * @param int $newAge
      */
     public function setAge($newAge)
     {

@@ -1,54 +1,96 @@
 <?php
 
 /**
- * Extend the Person class to include a constructor method
- * that initilizes the name and age properties
+ * Class Person
+ *
+ * Represents a person with a name and age.
+ *
+ * @author Ajao Mueez <mueezlherha@gmail.com>
+ * @copyright 2010 Ennui Design
+ * @license http://www.php.net/license/3_01.txt PHP License 3.01
  */
-
 class Person
 {
-  public $name;
-  public $age;
+    /**
+     * @var string
+     */
+    public $name;
 
-  // Constructor to initialize properties
-  public function __construct($name, $age)
-  {
-    $this->name = $name;
-    $this->age = $age;
-  }
+    /**
+     * @var int
+     */
+    public $age;
 
-  public function getName()
-  {
-    return $this->name;
-  }
+    /**
+     * Constructor to initialize properties.
+     *
+     * @param string $name
+     * @param int $age
+     */
+    public function __construct($name, $age)
+    {
+        $this->name = $name;
+        $this->age = $age;
+    }
 
-  public function getAge()
-  {
-    return $this->age;
-  }
+    /**
+     * Get the name of the person.
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
 
-  public function setAge($newAge)
-  {
-    $this->age = $newAge;
-  }
+    /**
+     * Get the age of the person.
+     *
+     * @return int
+     */
+    public function getAge()
+    {
+        return $this->age;
+    }
 
-  private function callToPublicNameAndAge()
-  {
-    return "{$this->name} is {$this->age} years old.";
-  }
+    /**
+     * Set a new age for the person.
+     *
+     * @param int $newAge
+     */
+    public function setAge($newAge)
+    {
+        $this->age = $newAge;
+    }
 
-  public function getNameAndAge()
-  {
-    return $this->callToPublicNameAndAge();
-  }
+    /**
+     * Get a string representation of the person's name and age.
+     *
+     * @return string
+     */
+    private function callToPublicNameAndAge()
+    {
+        return "{$this->name} is {$this->age} years old.";
+    }
+
+    /**
+     * Get the string representation of the person's name and age.
+     *
+     * @return string
+     */
+    public function getNameAndAge()
+    {
+        return $this->callToPublicNameAndAge();
+    }
 }
 
-//Instanciation of Person class
+// Instantiation of Person class
 $obj1 = new Person('Mueez', 24);
 $obj2 = new Person('Bolaji', 20);
 
-echo $obj1->getNameAndAge() . '<br>'; 
-echo $obj2->getNameAndAge() . '<br>'; 
+echo $obj1->getNameAndAge() . '<br>';
+echo $obj2->getNameAndAge() . '<br>';
+
 
 
 
