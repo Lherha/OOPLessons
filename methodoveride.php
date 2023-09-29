@@ -1,7 +1,13 @@
 <?php
 
 /**
+ * Class Person
+ * 
  * Override a method from the Person class in the Employee class
+ * 
+ *  @author Ajao Mueez <mueezlherha@gmail.com>
+ * @copyright 2010 Ennui Design
+ * @license http://www.php.net/license/3_01.txt PHP License 3.01
  */
 
 class Person
