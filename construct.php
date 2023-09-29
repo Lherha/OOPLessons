@@ -53,6 +53,30 @@ echo $obj2->getNameAndAge() . '<br>';
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // echo $obj1->getAge();
 
 

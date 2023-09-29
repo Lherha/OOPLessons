@@ -1,31 +1,89 @@
 <?php
 
 /**
- * Create a basic Person class with properties like
- *  name, age and methods like
- *  getName(), getAge(), setAge()
+ * Class Person
+ *
+ * Represents a basic person with properties like name and age,
+ * and methods to retrieve and set the name and age.
+ * @author Ajao Mueez <mueezlherha@gmail.com>
+ * @copyright 2010 Ennui Design 
+ * @license http://www.php.net/license/3_01.txt PHP License 3.01
  */
-
 class Person
 {
-  public $name = 'Bolaji';
-  public $age = 20;
+    /**
+     * helps to set name
+     * @var string 
+     */
+    public $name = 'Bolaji';
 
-  public function getName()
-  {
-    return $this->name;
-  }
+    /**
+     * helps to set age
+     * @var int
+     */
+    public $age = 20;
 
-  public function getAge()
-  {
-    return $this->age;
-  }
+    /**
+     * Get the name of the person.
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
 
-  public function setAge($newAge)
-  {
-    $this->age = $newAge;
-  }
+    /**
+     * Get the age of the person.
+     *
+     * @return int The age of the person.
+     */
+    public function getAge()
+    {
+        return $this->age;
+    }
+
+    /**
+     * Set the age of the person.
+     *
+     * @param int $newAge The new age of the person.
+     */
+    public function setAge($newAge)
+    {
+        $this->age = $newAge;
+    }
 }
+
+// Create an instance of the Person class
+$person = new Person('Mueez', 20);
+
+// Get the name and age
+$name = $person->getName();
+$age = $person->getAge();
+
+// Echo the name and age
+echo "Name: $name, Age: $age";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
