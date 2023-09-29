@@ -71,10 +71,14 @@ class Person
  */
 class Employee extends Person
 {
-    /** @var string The position of the employee. */
+    /** 
+     * @var string
+     */
     private $position;
 
-    /** @var int The salary of the employee. */
+    /** 
+     * @var int
+    */
     private $salary;
 
     /**
