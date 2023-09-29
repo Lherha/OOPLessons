@@ -36,7 +36,7 @@ class Person
     /**
      * Get the name of the person.
      *
-     * @return string The name of the person.
+     * @return string
      */
     public function getName()
     {
