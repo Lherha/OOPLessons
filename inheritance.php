@@ -84,10 +84,10 @@ class Employee extends Person
     /**
      * Constructor to initialize properties.
      *
-     * @param string $employee_name The name of the employee.
-     * @param int $employee_age The age of the employee.
-     * @param string $position The position of the employee.
-     * @param int $salary The salary of the employee.
+     * @param string $employee_name
+     * @param int $employee_age
+     * @param string $position
+     * @param int $salary
      */
     public function __construct($employee_name, $employee_age, $position, $salary)
     {
