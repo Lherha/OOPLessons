@@ -3,87 +3,162 @@
 /**
  * Class Person
  * 
- * Override a method from the Person class in the Employee class
+ * Represents a person with a name and age.
  * 
  * @author Ajao Mueez <mueezlherha@gmail.com>
  * @copyright 2010 Ennui Design
  * @license http://www.php.net/license/3_01.txt PHP License 3.01
  */
-
 class Person
 {
-  public $name;
-  private $age;
+    /** @var string The name of the person. */
+    public $name;
 
-  public function __construct($name, $age)
-  {
-    $this->name = $name;
-    $this->age = $age;
-  }
+    /** @var int The age of the person. */
+    private $age;
 
-  public function getName()
-  {
-    return $this->name;
-  }
+    /**
+     * Constructor to initialize properties.
+     *
+     * @param string $name The name of the person.
+     * @param int $age The age of the person.
+     */
+    public function __construct($name, $age)
+    {
+        $this->name = $name;
+        $this->age = $age;
+    }
 
-  public function getAge()
-  {
-    return $this->age;
-  }
+    /**
+     * Get the name of the person.
+     *
+     * @return string The name of the person.
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
 
-  public function setAge($newAge)
-  {
-    $this->age = $newAge;
-  }
+    /**
+     * Get the age of the person.
+     *
+     * @return int The age of the person.
+     */
+    public function getAge()
+    {
+        return $this->age;
+    }
 
-  public function sendMessage()
-  {
-    return $this->name . ' is ' . $this->age . ' years old.';
-  }
+    /**
+     * Set the age of the person.
+     *
+     * @param int $newAge The new age of the person.
+     */
+    public function setAge($newAge)
+    {
+        $this->age = $newAge;
+    }
+
+    /**
+     * Get a message about the person.
+     *
+     * @return string A message containing the person's name and age.
+     */
+    public function sendMessage()
+    {
+        return $this->name . ' is ' . $this->age . ' years old.';
+    }
 }
 
+/**
+ * Class Employee
+ * 
+ * Represents an employee, extending the Person class, with additional properties like position and salary.
+ * Overrides the sendMessage() method to provide employee-specific message.
+ * 
+ * @author Ajao Mueez <mueezlherha@gmail.com>
+ * @copyright 2010 Ennui Design
+ * @license http://www.php.net/license/3_01.txt PHP License 3.01
+ */
 class Employee extends Person
 {
-  private $position;
-  private $salary;
+    /** @var string The position of the employee. */
+    private $position;
 
-  public function __construct($employee_name, $employee_age, $position, $salary)
-  {
-    parent::__construct($employee_name, $employee_age);
-    $this->position = $position;
-    $this->salary = $salary;
-  }
+    /** @var int The salary of the employee. */
+    private $salary;
 
-  public function getPostion()
-  {
-    return $this->position;
-  }
+    /**
+     * Constructor to initialize properties.
+     *
+     * @param string $employee_name The name of the employee.
+     * @param int $employee_age The age of the employee.
+     * @param string $position The position of the employee.
+     * @param int $salary The salary of the employee.
+     */
+    public function __construct($employee_name, $employee_age, $position, $salary)
+    {
+        // Call the parent class constructor
+        parent::__construct($employee_name, $employee_age);
 
-  public function setPostion($newPosition)
-  {
-    $this->position = $newPosition;
-  }
+        // Add additional properties specific to Employee
+        $this->position = $position;
+        $this->salary = $salary;
+    }
 
-  public function getSalary()
-  {
-    return $this->salary;
-  }
+    /**
+     * Get the position of the employee.
+     *
+     * @return string The position of the employee.
+     */
+    public function getPosition()
+    {
+        return $this->position;
+    }
 
-  public function setSalary($newSalary)
-  {
-    $this->salary = $newSalary;
-  }
+    /**
+     * Set the position of the employee.
+     *
+     * @param string $newPosition The new position of the employee.
+     */
+    public function setPosition($newPosition)
+    {
+        $this->position = $newPosition;
+    }
 
+    /**
+     * Get the salary of the employee.
+     *
+     * @return int The salary of the employee.
+     */
+    public function getSalary()
+    {
+        return $this->salary;
+    }
 
-  //Override sendMessage() 
-  public function sendMessage()
-  {
-    return $this->name . ' is a ' . $this->position;
-  }
+    /**
+     * Set the salary of the employee.
+     *
+     * @param int $newSalary The new salary of the employee.
+     */
+    public function setSalary($newSalary)
+    {
+        $this->salary = $newSalary;
+    }
+
+    /**
+     * Get a message about the employee.
+     * Overrides the parent's sendMessage method to provide employee-specific message.
+     *
+     * @return string A message containing the employee's name and position.
+     */
+    public function sendMessage()
+    {
+        return $this->name . ' is a ' . $this->position;
+    }
 }
 
 $personOne = new Person('Bolaji Isaac', 27);
-
 $employeeOne = new Employee('Bolaji Isaac', 24, 'Software Developer', 200000);
 
 echo $personOne->sendMessage() . '<br>';
