@@ -48,7 +48,7 @@ class Person
     /**
      * Get the age of the person.
      *
-     * @return int The age of the person.
+     * @return int
      */
     public function getAge()
     {
