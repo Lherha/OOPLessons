@@ -58,7 +58,7 @@ class Person
     /**
      * Set the age of the person.
      *
-     * @param int $newAge The new age of the person.
+     * @param int $newAge
      */
     public function setAge($newAge)
     {
