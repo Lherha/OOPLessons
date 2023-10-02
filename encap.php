@@ -8,7 +8,7 @@
 class Person
 {
     /**
-     * @var string The name of the person.
+     * @var string
      */
     private $name;
 
