@@ -140,7 +140,7 @@ class Employee extends Person
     /**
      * Get the salary of the employee.
      *
-     * @return int The salary of the employee.
+     * @return int
      */
     public function getSalary()
     {
