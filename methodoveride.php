@@ -68,7 +68,7 @@ class Person
     /**
      * Get a message about the person.
      *
-     * @return string A message containing the person's name and age.
+     * @return string
      */
     public function sendMessage()
     {
