@@ -13,7 +13,7 @@ class Person
     private $name;
 
     /**
-     * @var int The age of the person.
+     * @var int
      */
     private $age;
 
