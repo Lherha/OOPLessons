@@ -11,7 +11,10 @@
  */
 class Person
 {
-    /** @var string The name of the person. */
+    /** 
+     * @var string
+     * 
+    */
     public $name;
 
     /** @var int The age of the person. */
