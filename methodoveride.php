@@ -150,7 +150,7 @@ class Employee extends Person
     /**
      * Set the salary of the employee.
      *
-     * @param int $newSalary The new salary of the employee.
+     * @param int $newSalary
      */
     public function setSalary($newSalary)
     {
