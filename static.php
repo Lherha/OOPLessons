@@ -8,25 +8,25 @@
 class Person
 {
     /**
-     * @var string The name of the person.
+     * @var string
      */
     public $name;
 
     /**
-     * @var int The age of the person.
+     * @var int
      */
     private $age;
 
     /**
-     * @var int Keeps track of the number of Person objects created.
+     * @var int
      */
     private static $count = 0;
 
     /**
      * Person constructor.
      *
-     * @param string $name The name of the person.
-     * @param int $age The age of the person.
+     * @param string $name 
+     * @param int $age 
      */
     public function __construct($name, $age)
     {
@@ -40,7 +40,7 @@ class Person
     /**
      * Get the name of the person.
      *
-     * @return string The name of the person.
+     * @return string
      */
     public function getName()
     {
@@ -50,7 +50,7 @@ class Person
     /**
      * Get the age of the person.
      *
-     * @return int The age of the person.
+     * @return int
      */
     public function getAge()
     {
@@ -60,7 +60,7 @@ class Person
     /**
      * Set the age of the person.
      *
-     * @param int $newAge The new age of the person.
+     * @param int $newAge
      */
     public function setAge($newAge)
     {
@@ -70,7 +70,7 @@ class Person
     /**
      * Get the count of Person objects created.
      *
-     * @return int The count of Person objects created.
+     * @return int
      */
     public static function countCreatedObjects()
     {
