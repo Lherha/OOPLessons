@@ -9,8 +9,8 @@ class Message
     /**
      * Format the message to be displayed in italics.
      *
-     * @param string $message The input message to be formatted.
-     * @return int The length of the formatted message.
+     * @param string $message
+     * @return int
      */
     public function formatMessage($message)
     {
@@ -28,8 +28,8 @@ class BoldMessage extends Message
     /**
      * Format the message to be displayed in bold.
      *
-     * @param string $message The input message to be formatted.
-     * @return int The length of the formatted message.
+     * @param string $message
+     * @return int
      */
     public function formatMessage($message)
     {
