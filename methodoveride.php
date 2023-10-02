@@ -94,7 +94,9 @@ class Employee extends Person
     */
     private $position;
 
-    /** @var int The salary of the employee. */
+    /** 
+     * @var int
+    */
     private $salary;
 
     /**
