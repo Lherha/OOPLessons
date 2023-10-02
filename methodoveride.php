@@ -130,7 +130,7 @@ class Employee extends Person
     /**
      * Set the position of the employee.
      *
-     * @param string $newPosition The new position of the employee.
+     * @param string $newPosition
      */
     public function setPosition($newPosition)
     {
