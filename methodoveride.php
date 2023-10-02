@@ -161,7 +161,7 @@ class Employee extends Person
      * Get a message about the employee.
      * Overrides the parent's sendMessage method to provide employee-specific message.
      *
-     * @return string A message containing the employee's name and position.
+     * @return string
      */
     public function sendMessage()
     {
