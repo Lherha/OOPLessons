@@ -10,20 +10,20 @@ namespace YourNamespace;
 class Person
 {
     /**
-     * @var string The name of the person.
+     * @var string
      */
     public $name;
 
     /**
-     * @var int The age of the person.
+     * @var int
      */
     public $age;
 
     /**
      * Person constructor.
      *
-     * @param string $name The name of the person.
-     * @param int $age The age of the person.
+     * @param string $name
+     * @param int $age
      */
     public function __construct($name, $age)
     {
@@ -34,7 +34,7 @@ class Person
     /**
      * Get the name of the person.
      *
-     * @return string The name of the person.
+     * @return string 
      */
     public function getName()
     {
