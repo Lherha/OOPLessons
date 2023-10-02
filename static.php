@@ -4,6 +4,9 @@
  * Class Person
  *
  * Represents a person with a name and age. Provides a static method to count the number of Person objects created.
+ * @author Ajao Mueez <mueezlherha@gmail.com>
+ * @copyright 2010 Ennui Design
+ * @license http://www.php.net/license/3_01.txt PHP License 3.01
  */
 class Person
 {
