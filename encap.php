@@ -20,8 +20,8 @@ class Person
     /**
      * Person constructor.
      *
-     * @param string $name The name of the person.
-     * @param int $age The age of the person.
+     * @param string $name
+     * @param int $age
      */
     public function __construct($name, $age)
     {
@@ -32,7 +32,7 @@ class Person
     /**
      * Get the name of the person.
      *
-     * @return string The name of the person.
+     * @return string
      */
     public function getName()
     {
@@ -42,7 +42,7 @@ class Person
     /**
      * Get the age of the person.
      *
-     * @return int The age of the person.
+     * @return int
      */
     public function getAge()
     {
@@ -52,7 +52,7 @@ class Person
     /**
      * Set the age of the person.
      *
-     * @param int $newAge The new age of the person.
+     * @param int $newAge
      */
     public function setAge($newAge)
     {
@@ -73,22 +73,22 @@ echo $personOne->getAge() . '<br>';
 class Employee extends Person
 {
     /**
-     * @var string The position of the employee.
+     * @var string
      */
     private $position;
 
     /**
-     * @var int The salary of the employee.
+     * @var int
      */
     private $salary;
 
     /**
      * Employee constructor.
      *
-     * @param string $employee_name The name of the employee.
-     * @param int $employee_age The age of the employee.
-     * @param string $position The position of the employee.
-     * @param int $salary The salary of the employee.
+     * @param string $employee_name
+     * @param int $employee_age
+     * @param string $position
+     * @param int $salary
      */
     public function __construct($employee_name, $employee_age, $position, $salary)
     {
@@ -100,7 +100,7 @@ class Employee extends Person
     /**
      * Get the position of the employee.
      *
-     * @return string The position of the employee.
+     * @return string
      */
     public function getPosition()
     {
@@ -110,7 +110,7 @@ class Employee extends Person
     /**
      * Set the position of the employee.
      *
-     * @param string $newPosition The new position of the employee.
+     * @param string $newPosition
      */
     public function setPosition($newPosition)
     {
@@ -120,7 +120,7 @@ class Employee extends Person
     /**
      * Get the salary of the employee.
      *
-     * @return int The salary of the employee.
+     * @return int 
      */
     public function getSalary()
     {
@@ -130,7 +130,7 @@ class Employee extends Person
     /**
      * Set the salary of the employee.
      *
-     * @param int $newSalary The new salary of the employee.
+     * @param int $newSalary
      */
     public function setSalary($newSalary)
     {
