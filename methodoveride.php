@@ -120,7 +120,7 @@ class Employee extends Person
     /**
      * Get the position of the employee.
      *
-     * @return string The position of the employee.
+     * @return string
      */
     public function getPosition()
     {
