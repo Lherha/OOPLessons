@@ -6,8 +6,9 @@
  * and displays appropriate messages based on the outcome of the deletion.
  *
  * @file delete.php
- * @author Your Name
- * @version 1.0
+ * @author Ajao Mueez <mueezlherha@gmail.com>
+ * @copyright 2010 Ennui Design 
+ * @license http://www.php.net/license/3_01.txt PHP License 3.01
  */
 
 include 'db_class.php';
