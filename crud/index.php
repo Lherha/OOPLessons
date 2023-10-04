@@ -1,10 +1,27 @@
 <?php
+/**
+ * This file includes a database class and displays employee data using PHP and HTML.
+ *
+ * PHP version 7.0
+ *
+ * @category CRUD
+ * @package  EmployeeManagement
+ */
+
 include 'db_class.php';
 
-// Create an instance of the Database class
+/**
+ * Create an instance of the Database class.
+ *
+ * @var Database
+ */
 $db = new Database();
 
-// Connect to the database
+/**
+ * Connect to the database.
+ *
+ * @var PDO
+ */
 $con = $db->connect();
 
 ?>
@@ -39,42 +56,38 @@ $con = $db->connect();
 
         <tbody>
         <?php
-  $sql = "Select * from `employee`";
+          $sql = "SELECT * FROM `employee`";
 
-  // Execute the SQL query using the connection
-  $result = $con->query($sql);
+          // Execute the SQL query using the connection
+          $result = $con->query($sql);
 
-  if ($result) {
-    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-      $employee_id = $row['id'];
-      $full_name = $row['fullname'];
-      $position = $row['position']; // corrected typo
-      $salary = $row['salary'];
-      $age = $row['age'];
+          if ($result) {
+              while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                  $employee_id = $row['id'];
+                  $full_name = $row['fullname'];
+                  $position = $row['position']; // corrected typo
+                  $salary = $row['salary'];
+                  $age = $row['age'];
 
-      echo '<tr>
-            <td>' . $employee_id . '</td>
-            <td>' . $full_name . '</td>
-            <td>' . $position . '</td>
-            <td>' . $salary . '</td>
-            <td>' . $age . '</td>
-            <td>
-              <button class="btn btn-primary"><a href="update.php?updateid=' . $employee_id . '" class="text-light">Update</a></button>
-              <button class="btn btn-danger"><a href="delete.php?deleteid=' . $employee_id . '" class="text-light">Delete</a></button>
-            </td>
-          </tr>';
-    }
-  }
+                  echo '<tr>
+                      <td>' . $employee_id . '</td>
+                      <td>' . $full_name . '</td>
+                      <td>' . $position . '</td>
+                      <td>' . $salary . '</td>
+                      <td>' . $age . '</td>
+                      <td>
+                          <button class="btn btn-primary"><a href="update.php?updateid=' . $employee_id . '" class="text-light">Update</a></button>
+                          <button class="btn btn-danger"><a href="delete.php?deleteid=' . $employee_id . '" class="text-light">Delete</a></button>
+                      </td>
+                  </tr>';
+              }
+          }
 
-  // Close the database connection
-  $db->closeConnection();
-  ?>
-
-</tbody>
+          // Close the database connection
+          $db->closeConnection();
+        ?>
 
         </tbody>
-
-
       </table>
     </div>
   </section>
