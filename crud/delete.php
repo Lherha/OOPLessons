@@ -1,7 +1,9 @@
 <?php
 include 'db_class.php';
 
-// Create an instance of the Database class
+/**  
+*   Create an instance of the Database class
+*/
 $db = new Database();
 
 // Connect to the database
