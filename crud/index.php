@@ -5,7 +5,7 @@
  * PHP version 7.0
  *
  * @category CRUD
- * @package  EmployeeManagement
+ * @package  Employee_CRUD
  * @author Ajao Mueez <mueezlherha@gmail.com>
  * @copyright 2010 Ennui Design 
  * @license http://www.php.net/license/3_01.txt PHP License 3.01
