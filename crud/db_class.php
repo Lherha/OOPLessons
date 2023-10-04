@@ -3,6 +3,9 @@
  * Class Database
  *
  * Represents a database connection and provides methods for connecting and closing the connection.
+ * @author Ajao Mueez <mueezlherha@gmail.com>
+ * @copyright 2010 Ennui Design 
+ * @license http://www.php.net/license/3_01.txt PHP License 3.01
  */
 class Database {
     private $servername;
