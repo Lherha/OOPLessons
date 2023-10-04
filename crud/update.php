@@ -1,4 +1,18 @@
 <?php
+/**
+ * Employee CRUD using OOP.
+ *
+ * This script handles editing an employee's details in the database using OOP.
+ *
+ * PHP version 7.0 and above
+ *
+ * @category   PHP
+ * @package    Employee_CRUD
+ * @author     Your Name
+ * @license    MIT License
+ * @link       https://example.com/
+ */
+
 include 'db_class.php';
 include 'Employee.php'; // Include the Employee class
 
