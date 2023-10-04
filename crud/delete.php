@@ -1,9 +1,18 @@
 <?php
+/**
+ * Script to handle employee deletion from the database.
+ *
+ * This script connects to the database, processes a deletion request,
+ * and displays appropriate messages based on the outcome of the deletion.
+ *
+ * @file delete.php
+ * @author Your Name
+ * @version 1.0
+ */
+
 include 'db_class.php';
 
-/**  
-*   Create an instance of the Database class
-*/
+// Create an instance of the Database class
 $db = new Database();
 
 // Connect to the database
