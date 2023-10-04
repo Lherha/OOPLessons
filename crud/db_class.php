@@ -28,7 +28,7 @@ class Database {
     /**
      * Establishes a connection to the database.
      *
-     * @return PDO|null The PDO connection object or null if connection fails.
+     * @return PDO|null
      */
     public function connect() {
         try {
