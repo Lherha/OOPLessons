@@ -11,12 +11,18 @@
  */
 class Person
 {
-    /** 
+  /** 
   * A public variable 
   * 
   * @var string
   */
   public $name;
+
+  /** 
+  * A public variable 
+  * 
+  * @var int
+  */
   public $age;
 
   public function __construct($name, $age)
