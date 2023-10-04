@@ -6,11 +6,11 @@
  *
  * PHP version 7.0 and above
  *
- * @category   PHP
+ * @category   CRUD
  * @package    Employee_CRUD
- * @author     Your Name
- * @license    MIT License
- * @link       https://example.com/
+ * @author Ajao Mueez <mueezlherha@gmail.com>
+ * @copyright 2010 Ennui Design 
+ * @license http://www.php.net/license/3_01.txt PHP License 3.01
  */
 
 include 'db_class.php';

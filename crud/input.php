@@ -6,7 +6,7 @@
  *
  * PHP version 7.0 and above
  *
- * @category   PHP
+ * @category   CRUD
  * @package    Employee_CRUD
  * @author Ajao Mueez <mueezlherha@gmail.com>
  * @copyright 2010 Ennui Design 
